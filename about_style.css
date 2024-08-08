@@ -1,0 +1,115 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.heading {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.heading h1 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px; /* Ensures the container doesn't get too wide */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-image,
+.luxury-image {
+  width: 100%;
+  max-width: 1000px; /* Increased max-width for larger images */
+  margin: 0 auto; /* Center images */
+  padding: 20px; /* Adjust padding for better spacing */
+}
+
+.about-image img,
+.luxury-image img {
+  width: 100%; /* Ensure images fit the width of their containers */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-content h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+.social-container {
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+}
+
+.social-text {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-link {
+  margin: 0 15px; /* Increased margin for more spacing */
+  text-decoration: none;
+}
+
+.icon-link img {
+  width: 50px; /* Increased size of social icons */
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-link:hover img {
+  transform: scale(1.2);
+}

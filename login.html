@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"> 
+    <title>Admin_Staff_Login_menu</title>
+</head>
+<body>
+   
+    <form action="#" method="post" id="userForm">
+        <h1>Welcome to Spice Island Mart Company Menu</h1>
+        
+        <label for="userType">Select User Type:</label>
+        <select id="userType" name="userType">
+            <option value="admin">Admin</option>
+            <option value="staff">Staff Member</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+        <button class="btn btn-primary-back"><a href="ui.php">Back</a></button>
+        
+    </form>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevents the form from submitting in the traditional way
+
+            // Get the selected option
+            var selectedOption = document.getElementById('userType').value;
+
+            // Redirect based on the selected option
+            if (selectedOption === 'admin') {
+                window.location.href = 'Admin_login.php'; 
+            } else if (selectedOption === 'staff') {
+                window.location.href = 'staff_login.php';
+            }
+        });
+    </script>
+
+</body>
+</html>

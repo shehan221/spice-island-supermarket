@@ -1,0 +1,103 @@
+.receipt-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.receipt-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.receipt-header img {
+    width: 100px;
+}
+
+.receipt-header h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.receipt-content {
+    margin-bottom: 20px;
+}
+
+.receipt-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt-content th, .receipt-content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.receipt-content th {
+    background-color: #f2f2f2;
+}
+
+.receipt-footer {
+    text-align: center;
+    position: relative;
+}
+
+.back-to-cart {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.confirm-order {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.confirm-order:hover {
+    background-color: #45a049;
+}
+
+.confirm-order:active {
+    background-color: #3e8e41;
+}
+
+.send-otp-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px; 
+}
+
+.send-otp-btn:hover {
+    background-color: #0056b3;
+}
+
+.send-otp-btn:active {
+    background-color: #004080;
+}
+
+.otp-container {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    display: flex;
+    align-items: center;
+}
+
+.otp-container input[type="text"] {
+    width: 150px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
